@@ -25,8 +25,8 @@ Este projeto é uma aplicação de chat simples que inclui um servidor de chat e
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/seu_usuario/chat-application.git
-    cd chat-application
+    git clone https://github.com/lucianomartinsjr/socket-java.git
+    cd socket-java
     ```
 
 2. Compile e execute o servidor:
