@@ -11,7 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ChatClient extends JFrame {
-    private String name;
     private Socket socket;
     private BufferedReader input;
     private PrintWriter output;
@@ -20,8 +19,7 @@ public class ChatClient extends JFrame {
     private JButton sendButton;
 
     public ChatClient(String name) {
-        super("Chat Client - " + name);
-        this.name = name;
+        super("Chat Client - ");
 
         chatArea = new JTextArea();
         chatArea.setEditable(false);
@@ -47,10 +45,11 @@ public class ChatClient extends JFrame {
         panel.add(sendButton, BorderLayout.EAST);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 300);
+        setSize(800, 600); 
         setLayout(new BorderLayout());
         add(scrollPane, BorderLayout.CENTER);
         add(panel, BorderLayout.SOUTH);
+        setLocationRelativeTo(null); 
     }
 
     public void connect(String serverAddress, int port) {

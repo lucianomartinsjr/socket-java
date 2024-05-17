@@ -45,10 +45,11 @@ public class ChatServer extends JFrame {
         panel.add(sendButton, BorderLayout.EAST);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 300);
+        setSize(800, 600);
         setLayout(new BorderLayout());
         add(scrollPane, BorderLayout.CENTER);
         add(panel, BorderLayout.SOUTH);
+        setLocationRelativeTo(null);
     }
 
     private void sendServerMessage() {
@@ -66,7 +67,7 @@ public class ChatServer extends JFrame {
 
             while (true) {
                 Socket clientSocket = serverSocket.accept();
-                appendToChatArea("Novo cliente conectado");
+                appendToChatArea("--- Novo cliente conectado\n");
 
                 ClientHandler clientHandler = new ClientHandler(clientSocket);
                 clients.add(clientHandler);
