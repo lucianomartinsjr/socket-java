@@ -57,14 +57,6 @@ Este projeto é uma aplicação de chat simples que inclui um servidor de chat e
   - Inicie o cliente e ele tentará conectar-se ao servidor no endereço e porta especificados.
   - Use a área de entrada de texto e o botão "Send" para enviar mensagens ao servidor e a todos os outros clientes conectados.
 
-## Estrutura do Projeto
-
-socket-java/
-│
-├── ChatServer.java
-├── ChatClient.java
-└── README.md
-
 ## Exemplo de Uso
 
 1. Inicie o servidor:
